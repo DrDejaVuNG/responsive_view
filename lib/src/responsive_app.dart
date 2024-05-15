@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_view/src/responsive_utils.dart';
 
+/// {@template responsive_app}
 /// A widget that initializes the ResponsiveView framework and provides responsive scaling functionality for its child widget.
 ///
 /// Wrap your MaterialApp widget with this widget to enable responsive scaling throughout your application.
+/// {@endtemplate}
 class ResponsiveApp extends StatelessWidget {
+/// {@macro responsive_app}
   const ResponsiveApp({
     super.key,
     required this.designSize,
@@ -33,7 +36,7 @@ class ResponsiveApp extends StatelessWidget {
     final size = MediaQuery.sizeOf(context);
     final portrait = MediaQuery.orientationOf(context) == Orientation.portrait;
 
-    /// Initializes the ResponsiveUtils class with necessary data.
+    // Initializes the ResponsiveUtils class with necessary data.
     ResponsiveUtils.init(
       initSize: designSize,
       phoneSize: portrait ? size : size.flipped,

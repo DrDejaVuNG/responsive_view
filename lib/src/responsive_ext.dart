@@ -7,25 +7,21 @@ import 'package:responsive_view/src/responsive_utils.dart';
 extension ResponsiveExtension on num {
   /// Sets the width of a UI element based on the design size and applies responsive scaling.
   ///
-  /// This is a shortcut for `ResponsiveUtils.setWidth(this)`.
   /// * See [ResponsiveUtils.setWidth] for more details.
   double get w => ResponsiveUtils.setWidth(this);
 
   /// Sets the height of a UI element based on the design size and applies responsive scaling.
   ///
-  /// This is a shortcut for `ResponsiveUtils.setHeight(this)`.
   /// * See [ResponsiveUtils.setHeight] for more details.
   double get h => ResponsiveUtils.setHeight(this);
 
   /// Sets the radius of a UI element based on the design size and applies responsive scaling.
   /// 
-  /// This is a shortcut for `ResponsiveUtils.setRadius(this)`.
   /// * See [ResponsiveUtils.setRadius] for more details.
   double get r => ResponsiveUtils.setRadius(this);
 
   /// Sets the font size of a Text widget based on the design size and applies responsive scaling.
   ///
-  /// This is a shortcut for `ResponsiveUtils.setSp(this)`.
   /// * See [ResponsiveUtils.setSp] for more details.
   double get sp => ResponsiveUtils.setSp(this);
 

@@ -103,7 +103,7 @@ class ResponsiveUtils {
   static void _assertInitialized() {
     if (_initialized) return;
     throw FlutterError(
-      'Responsive view is un_initialized, you need to Wrap MaterialApp with ResponsiveApp Widget.',
+      'Responsive view is uninitialized, you need to Wrap MaterialApp with ResponsiveApp Widget.',
     );
   }
 }

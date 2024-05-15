@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_view/src/responsive_utils.dart';
 
 class ResponsiveView extends StatelessWidget {
   const ResponsiveView({
@@ -14,7 +15,7 @@ class ResponsiveView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return switch (MediaQuery.sizeOf(context).width) {
+    return switch (ResponsiveUtils.screenWidth) {
       > 180 && <= 480 => mobile ?? tablet ?? desktop ?? const SizedBox.shrink(),
       > 480 && <= 1080 =>
         tablet ?? mobile ?? desktop ?? const SizedBox.shrink(),
