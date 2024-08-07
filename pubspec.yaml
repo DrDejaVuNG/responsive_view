@@ -1,10 +1,10 @@
 name: responsive_view
-description: "A new Flutter package project."
+description: "This package provides a convenient way to handle responsive layouts in your Flutter applications."
 version: 0.0.1
-homepage:
+homepage: https://drdejavu.ng
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
+  sdk: '>=2.19.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

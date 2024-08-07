@@ -30,18 +30,18 @@ class ResponsiveUtils {
   /// Initializes the ResponsiveUtils class with essential parameters.
   ///
   /// * [initSize]: The size representing your design layout.
-  /// * [phoneSize]: The size representing the base phone screen size.
+  /// * [screenSize]: The size representing the base phone screen size.
   /// * [minMultiple]: The minimum scaling factor allowed for values.
   /// * [maxMultiple]: The maximum scaling factor allowed for values.
   static void init({
     required Size initSize,
-    required Size phoneSize,
+    required Size screenSize,
     required double minMultiple,
     required double maxMultiple,
   }) {
     _initialized = true;
     _designSize = initSize;
-    _currentSize = phoneSize;
+    _currentSize = screenSize;
     _minMultiplier = minMultiple;
     _maxMultiplier = maxMultiple;
   }

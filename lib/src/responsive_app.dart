@@ -7,16 +7,16 @@ import 'package:responsive_view/src/responsive_utils.dart';
 /// Wrap your MaterialApp widget with this widget to enable responsive scaling throughout your application.
 /// {@endtemplate}
 class ResponsiveApp extends StatelessWidget {
-/// {@macro responsive_app}
+  /// {@macro responsive_app}
   const ResponsiveApp({
     super.key,
     required this.designSize,
     required this.child,
-    this.minMultiplier = 1,
-    this.maxMultiplier = 1,
+    this.minMultiplier = 0.8,
+    this.maxMultiplier = 1.2,
   });
 
-  /// The [Size] of the device used in the design process. 
+  /// The [Size] of the device used in the design process.
   /// This size will be used as the baseline for responsive scaling.
   final Size designSize;
 
@@ -39,7 +39,7 @@ class ResponsiveApp extends StatelessWidget {
     // Initializes the ResponsiveUtils class with necessary data.
     ResponsiveUtils.init(
       initSize: designSize,
-      phoneSize: portrait ? size : size.flipped,
+      screenSize: portrait ? size : size.flipped,
       minMultiple: minMultiplier,
       maxMultiple: maxMultiplier,
     );

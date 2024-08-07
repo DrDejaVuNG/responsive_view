@@ -1,8 +1,8 @@
 import 'package:responsive_view/src/responsive_utils.dart';
 
 /// Extension methods for adding responsive functionality to numeric values.
-/// 
-/// This extension provides convenient access to responsive scaling methods 
+///
+/// This extension provides convenient access to responsive scaling methods
 /// from the [ResponsiveUtils] class.
 extension ResponsiveExtension on num {
   /// Sets the width of a UI element based on the design size and applies responsive scaling.
@@ -16,7 +16,7 @@ extension ResponsiveExtension on num {
   double get h => ResponsiveUtils.setHeight(this);
 
   /// Sets the radius of a UI element based on the design size and applies responsive scaling.
-  /// 
+  ///
   /// * See [ResponsiveUtils.setRadius] for more details.
   double get r => ResponsiveUtils.setRadius(this);
 
